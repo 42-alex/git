@@ -59,4 +59,10 @@ git branch -M main
 git remote add origin git@github.com:ivan/myproject.git 
 git push -u origin main
 ```
-   
+
+
+## Clone a repository
+
+```
+git clone git@github.com:ivan/myproject.git
+```
