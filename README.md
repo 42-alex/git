@@ -14,7 +14,7 @@
 git config --global user.name "Ivan Ivanov"
 git config --global user.email "ivan.ivanov@gmail.com"
 ```
-These settings are necessary for the Gir to work properly. This data is inserted into the change history. This is the only way to find out who did what in the project
+These settings are necessary for the Git to work properly. This data is inserted into the change history. This is the only way to find out who did what in the project
 
 ### Add SSH-keys
 ```
