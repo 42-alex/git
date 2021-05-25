@@ -32,7 +32,6 @@ $ ssh-add ~/.ssh/id_rsa
 ```
 This is in order not to be entered each time a login and password when you synchronize local and remote repository
 
-
 ### Add .gitignore
 Create a file .gitignore in the project root and describe all folders and files which you want to exclude from your commits.
 Example:
@@ -40,3 +39,24 @@ Example:
 .idea/
 .gitignore
 ```
+
+
+## Create a new repository
+
+1. Go to the folder with the project and execute the command
+```
+git init
+```
+2. Add files to the project and make a commit
+```
+git add .  # add all files
+git commit -m "Initial commit"
+```
+3. Create an empty remote repository (for example, on Github.com)
+4. Perform local and remote repository integration
+```
+git branch -M main
+git remote add origin git@github.com:ivan/myproject.git 
+git push -u origin main
+```
+   
