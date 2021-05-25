@@ -16,6 +16,7 @@ git config --global user.email "ivan.ivanov@gmail.com"
 ```
 These settings are necessary for the Git to work properly. This data is inserted into the change history. This is the only way to find out who did what in the project
 
+
 ### Add SSH-keys
 ```
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
@@ -38,6 +39,11 @@ Example:
 ```
 .idea/
 .gitignore
+```
+
+### Show current branch in terminal ([source](https://ru.hexlet.io/blog/posts/kak-prisoedinitsya-k-rabote-nad-opensorsom-chto-takoe-ps1-i-drugie-voprosy-otvechaet-razrabotchik-heksleta-andrey-moshkov))
+```
+export PS1="💻 \[\e[1;34m\]\W\[\e[m\]\[\033[32m\]\$(__git_ps1)\[\033[00m\] $ "
 ```
 
 
