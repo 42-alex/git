@@ -72,3 +72,100 @@ git push -u origin main
 ```
 git clone git@github.com:ivan/myproject.git
 ```
+
+
+## Commands 
+
+```
+git status
+```
+Shows the status of the repository, changed files, files that are not being tracked and files prepared for commit.
+
+```
+git diff
+```
+Shows changes in all changed files. To show diff in index add flag `--staged`.
+If the pager application opens, you need to press **f** to move down, **u** to move up and **q** to exit the view mode.
+
+```
+git log
+```
+Shows list of all commits sorted by date. `git log --oneline` shows compact version. `git log -p` shows diff for each commit.
+
+```
+git show 32f2
+```
+Shows diff only for specified commit. You can use only first four symbols from commit hash as it is always unique.
+
+```
+git blame README.md
+```
+Shows who, when and in which commit made changes.
+
+```
+git add file1 file2  # add file1 and file2
+git add .            # add all untracked and changed files
+git add -i           # manually specify which part of file should be commited
+```
+Adds files to index. After this command files are ready to be commited.
+
+```
+git commit -m "(message that describes your commit)"
+```
+Commit files which were added to index with description message.
+
+```
+git commit --amend
+```
+Fix your last commit. You can either add new files to your last commit or just edit commit message of your last commit. Under the hood it makes `git reset` and creates a new commit with new data.
+
+```
+git push
+```
+Send commits from your current branch to remote repository.
+
+```
+git pull --rebase
+```
+Before starting work, you should always run this command, which downloads new commits from the external repository and adds them to the local repository.
+`--rebase` flag is necessary to avoid unnecessary merge commits that worsen the change history
+
+```
+git rm file1
+```
+Remove file "file1" from working directory and add it to index (so it is ready to be commited)
+
+```
+git restore file1
+```
+Restore changed or removed file "file1". After this command "file1" will appear again in your working directory. You can also use flag `--staged` here. It will remove your file from index only and file will appear in your working directory. 
+
+```
+git revert 0cb9
+```
+Revert any commit. This command creates opposite changes to specified commit. It is enough to specify four first symbols of commit hash which you need to revert.
+
+```
+git reset --hard HEAD~
+```
+Remove last commit. `git reset --hard HEAD~2` will remove last two commits. `git reset HEAD~` will remove last commit but keeps changed files from commit which is removed in working directory.
+
+```
+git grep -i search_term
+```
+Searches all project files for a match with the specified string. `-i` flag means case insensitive. `git grep search_term 5120bea3` search in a specific commit. `git grep hexlet $(git rev-list --all)` search in all history.
+
+```
+git clean -fd
+```
+Remove all untracked files and folders in working directory. Flags `-f` - force, `-d` - directory.
+
+```
+git checkout 0cb9
+```
+Switch between branches or commits
+
+```
+git branch
+```
+Look what branch or commit loaded in working directory currently
