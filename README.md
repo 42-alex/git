@@ -169,3 +169,13 @@ Switch between branches or commits
 git branch
 ```
 Look what branch or commit loaded in working directory currently
+
+```
+git stash
+```
+Hide current changes from index to special stash folder.
+
+```
+git stash pop
+```
+Get hidden changes from stash and place it to index.
