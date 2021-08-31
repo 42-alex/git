@@ -235,3 +235,12 @@ Hide current changes from index to special stash folder.
 git stash pop
 ```
 Get hidden changes from stash and place it to index.
+
+---
+
+```
+git mv old_filename new_filename
+```
+Move or rename a file. If you rename a file you might see that git consider it as
+you deleted file with an old name and created a new file with a new name. To avoid
+it use something like `git mv app-reducer.js app-reducer.ts`
