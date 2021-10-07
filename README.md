@@ -224,7 +224,9 @@ Remove all untracked files and folders in working directory. Flags `-f` - force,
 ```
 git checkout 0cb9
 ```
-Switch between branches or commits
+Switch between branches or commits.
+If you switched between commits and want to return back (to the latest commit) use the next command 
+```git checkout [branchname]```, where "branchname" should be changed on your branchname where you started moving between commints.
 
 ---
 
