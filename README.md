@@ -67,6 +67,13 @@ git push -u origin main
 ```
 
 
+## Check a remote (path for push and fetch your commits)
+
+```
+git remote -v
+```
+
+
 ## Clone a repository
 
 ```
