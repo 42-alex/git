@@ -72,6 +72,10 @@ git push -u origin main
 ```
 git clone git@github.com:ivan/myproject.git
 ```
+You can clone repository root files in your root folder. In other words you can clone files without creating a new folder.
+Just add a dot after the repository path ```git clone git@github.com:ivan/myproject.git .```
+As well you can create a folder with your name or specify a path ```git clone git@github.com:ivan/myproject.git my-custom-name```
+or ```git clone git@github.com:ivan/myproject.git my-custom-name/next-level``` 
 
 
 ## Commands 
