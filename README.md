@@ -257,3 +257,11 @@ git mv old_filename new_filename
 Move or rename a file. If you rename a file you might see that git consider it as
 you deleted file with an old name and created a new file with a new name. To avoid
 it use something like `git mv app-reducer.js app-reducer.ts`
+
+---
+
+```
+git push origin -u YOUR_BRANCH_NAME --force-with-lease
+```
+Overwrite the existing branch on the server with your local branch version
+
