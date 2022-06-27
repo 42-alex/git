@@ -265,3 +265,11 @@ git push origin -u YOUR_BRANCH_NAME --force-with-lease
 ```
 Overwrite the existing branch on the server with your local branch version
 
+---
+
+```
+git reset HEAD --hard
+```
+One way of using this when you merged branches but you understand that you don't have time 
+to resolve the whole bunch of issues due to higher priorities
+
