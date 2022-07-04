@@ -30,6 +30,10 @@ $ ssh-add ~/.ssh/id_rsa
 
 # At the last step, you need to add the public key ~/.ssh/id_rsa.pub
 # to the remote repository (to your Github account)
+
+# Show the content of ~/.ssh/id_rsa.pub
+$ cat ~/.ssh/id_rsa.pub
+# and then copy it. Add public ssh-key to the Github account. When you add key you will be asked to name the key.
 ```
 This is in order not to be entered each time a login and password when you synchronize local and remote repository
 
